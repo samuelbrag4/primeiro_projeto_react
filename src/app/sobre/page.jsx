@@ -1,7 +1,8 @@
 import Link from "next/link";
 import styles from "./sobre.module.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header/page";
+import Footer from "../components/Footer/page";
+import CardDev from "../components/CardDev/page";
 
 export default function Sobre() {
   const nomePagina = "Sobre";
@@ -20,6 +21,7 @@ export default function Sobre() {
         <Link href={"/filmes"} className={styles.link}>
           Ir Para a Página Filmes
         </Link>
+        <CardDev />
       </div>
       <Footer />
     </div>

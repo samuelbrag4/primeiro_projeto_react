@@ -1,5 +1,6 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/page";
+import Footer from "./components/Footer/page";
+import CardDev from "./components/CardDev/page";
 import styles from "./page.module.css";
 import Link from "next/link";
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Link href={"/filmes"} className={styles.link}>
           Ir Para a Página Filmes
         </Link>
+        <CardDev />
       </div>
       <Footer />
     </div>

@@ -1,5 +1,6 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header/page";
+import Footer from "../components/Footer/page";
+import CardDev from "../components/CardDev/page";
 import styles from "./filmes.module.css";
 import Link from "next/link";
 
@@ -16,6 +17,7 @@ export default function Filmes() {
         <Link href={"/sobre"} className={styles.link}>
           Ir Para a Página Sobre
         </Link>
+        <CardDev />
       </div>
       <Footer />
     </div>
